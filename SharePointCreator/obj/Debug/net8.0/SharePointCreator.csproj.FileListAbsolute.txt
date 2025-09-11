@@ -1,0 +1,6 @@
+C:\Users\C551465\Documents\Portable Software\SharePoint_Creator\SharePointCreator\obj\Debug\net8.0\SharePointCreator.csproj.AssemblyReference.cache
+C:\Users\C551465\Documents\Portable Software\SharePoint_Creator\SharePointCreator\obj\Debug\net8.0\SharePointCreator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\C551465\Documents\Portable Software\SharePoint_Creator\SharePointCreator\obj\Debug\net8.0\SharePointCreator.AssemblyInfoInputs.cache
+C:\Users\C551465\Documents\Portable Software\SharePoint_Creator\SharePointCreator\obj\Debug\net8.0\SharePointCreator.AssemblyInfo.cs
+C:\Users\C551465\Documents\Portable Software\SharePoint_Creator\SharePointCreator\obj\Debug\net8.0\SharePointCreator.csproj.CoreCompileInputs.cache
+C:\Users\C551465\Documents\Portable Software\SharePoint_Creator\SharePointCreator\obj\Debug\net8.0\SharePointCreator.sourcelink.json
