@@ -1,0 +1,338 @@
+{
+  "IssueTracker": [
+    {
+      "Title": "Database Connection Timeout",
+      "Description": "SQL Management Studio is experiencing frequent timeout errors when connecting to the main database server. Users report delays of 30+ seconds before connection failure.",
+      "Priority": "Critical",
+      "Status": "Open",
+      "Tool": "SQL Management Studio",
+      "ReportedBy": "John Smith",
+      "ReportedDate": "2025-09-18T07:00:00Z",
+      "ResolvedDate": null,
+      "AssignedTo": "Sarah Johnson",
+      "ResolutionNotes": null
+    },
+    {
+      "Title": "Printer Not Responding",
+      "Description": "HP LaserJet Pro printer in Building A is not responding to print jobs. Print queue shows jobs as pending but nothing prints.",
+      "Priority": "Medium",
+      "Status": "In Progress",
+      "Tool": "HP LaserJet Pro",
+      "ReportedBy": "Lisa Chen",
+      "ReportedDate": "2025-09-18T05:00:00Z",
+      "ResolvedDate": null,
+      "AssignedTo": "Mike Rodriguez",
+      "ResolutionNotes": "Checking network connectivity and driver updates"
+    },
+    {
+      "Title": "License Expiration Alert",
+      "Description": "Adobe Creative Suite licenses are expiring in 14 days. Need to renew corporate license agreement.",
+      "Priority": "Low",
+      "Status": "Open",
+      "Tool": "Adobe Creative Suite",
+      "ReportedBy": "David Wilson",
+      "ReportedDate": "2025-09-17T09:00:00Z",
+      "ResolvedDate": null,
+      "AssignedTo": "Jennifer Lee",
+      "ResolutionNotes": null
+    },
+    {
+      "Title": "Network Connectivity Issues",
+      "Description": "Building A WiFi network is experiencing intermittent connectivity issues. Users report frequent disconnections.",
+      "Priority": "High",
+      "Status": "Open",
+      "Tool": "Building A WiFi",
+      "ReportedBy": "Alex Brown",
+      "ReportedDate": "2025-09-18T04:00:00Z",
+      "ResolvedDate": null,
+      "AssignedTo": "Robert Kim",
+      "ResolutionNotes": null
+    },
+    {
+      "Title": "Excel Formula Error",
+      "Description": "Monthly report template showing #REF! errors in calculated fields after recent Excel update.",
+      "Priority": "Medium",
+      "Status": "Resolved",
+      "Tool": "Microsoft Excel",
+      "ReportedBy": "Emily Davis",
+      "ReportedDate": "2025-09-15T10:30:00Z",
+      "ResolvedDate": "2025-09-16T14:20:00Z",
+      "AssignedTo": "Sarah Johnson",
+      "ResolutionNotes": "Updated formula references to be compatible with Excel 365"
+    },
+    {
+      "Title": "VPN Connection Drops",
+      "Description": "Remote workers experiencing frequent VPN disconnections during peak hours.",
+      "Priority": "High",
+      "Status": "Resolved",
+      "Tool": "Cisco AnyConnect VPN",
+      "ReportedBy": "Mark Thompson",
+      "ReportedDate": "2025-09-14T08:15:00Z",
+      "ResolvedDate": "2025-09-15T16:45:00Z",
+      "AssignedTo": "Robert Kim",
+      "ResolutionNotes": "Upgraded VPN server capacity and optimized connection protocols"
+    },
+    {
+      "Title": "Backup Process Failure",
+      "Description": "Nightly backup process failed for the document management system. Last successful backup was 3 days ago.",
+      "Priority": "Critical",
+      "Status": "Resolved",
+      "Tool": "Document Management System",
+      "ReportedBy": "Susan Garcia",
+      "ReportedDate": "2025-09-13T06:00:00Z",
+      "ResolvedDate": "2025-09-13T18:30:00Z",
+      "AssignedTo": "Mike Rodriguez",
+      "ResolutionNotes": "Fixed storage space issue and updated backup configuration"
+    },
+    {
+      "Title": "Email Client Sync Issues",
+      "Description": "Outlook not syncing emails properly with Exchange server. Some emails delayed by several hours.",
+      "Priority": "Medium",
+      "Status": "Resolved",
+      "Tool": "Microsoft Outlook",
+      "ReportedBy": "Kevin Martinez",
+      "ReportedDate": "2025-09-12T11:20:00Z",
+      "ResolvedDate": "2025-09-14T09:15:00Z",
+      "AssignedTo": "Jennifer Lee",
+      "ResolutionNotes": "Rebuilt Outlook profile and updated Exchange configuration"
+    }
+  ],
+  "ToolReleases": [
+    {
+      "Title": "Hyperlink Fix Macro v2.1",
+      "ToolName": "Hyperlink Fix Macro",
+      "Version": "2.1",
+      "ReleaseDate": "2025-09-15T10:00:00Z",
+      "ReleaseNotes": "Fixed bug with Excel hyperlinks pointing to SharePoint documents. Improved performance when processing large spreadsheets. Added support for relative hyperlinks.",
+      "ReleaseType": "Minor",
+      "Status": "Released",
+      "DownloadUrl": "https://example.com/downloads/hyperlink-fix-macro-v2.1.zip"
+    },
+    {
+      "Title": "Feedback Importer Script v1.8",
+      "ToolName": "Feedback Importer Script",
+      "Version": "1.8",
+      "ReleaseDate": "2025-09-11T14:30:00Z",
+      "ReleaseNotes": "Added support for CSV imports from customer feedback systems. Enhanced error handling for malformed data. Improved logging and reporting capabilities.",
+      "ReleaseType": "Minor",
+      "Status": "Released",
+      "DownloadUrl": "https://example.com/downloads/feedback-importer-v1.8.zip"
+    },
+    {
+      "Title": "Data Analysis Tool v3.2",
+      "ToolName": "Data Analysis Tool",
+      "Version": "3.2",
+      "ReleaseDate": "2025-09-04T09:00:00Z",
+      "ReleaseNotes": "New dashboard features with interactive charts and graphs. Improved data visualization options including heat maps and trend analysis. Enhanced export capabilities.",
+      "ReleaseType": "Major",
+      "Status": "Released",
+      "DownloadUrl": "https://example.com/downloads/data-analysis-tool-v3.2.zip"
+    },
+    {
+      "Title": "Report Generator v1.5",
+      "ToolName": "Report Generator",
+      "Version": "1.5",
+      "ReleaseDate": "2025-08-28T16:45:00Z",
+      "ReleaseNotes": "Updated report templates with modern design. Fixed formatting issues with PDF exports. Added new template options for quarterly and annual reports.",
+      "ReleaseType": "Minor",
+      "Status": "Released",
+      "DownloadUrl": "https://example.com/downloads/report-generator-v1.5.zip"
+    },
+    {
+      "Title": "Network Monitor Tool v2.0",
+      "ToolName": "Network Monitor Tool",
+      "Version": "2.0",
+      "ReleaseDate": "2025-08-21T12:00:00Z",
+      "ReleaseNotes": "Complete rewrite with improved user interface. Real-time network monitoring dashboard. Enhanced alerting system with email and SMS notifications.",
+      "ReleaseType": "Major",
+      "Status": "Released",
+      "DownloadUrl": "https://example.com/downloads/network-monitor-v2.0.zip"
+    }
+  ],
+  "WorkInstructions": [
+    {
+      "Title": "Hyperlink Fix Macro: Installation Guide",
+      "Description": "Step-by-step instructions for installing and configuring the Hyperlink Fix Macro in Excel",
+      "Category": "Installation",
+      "ToolName": "Hyperlink Fix Macro",
+      "DocumentUrl": "https://example.sharepoint.com/WorkInstructions/HyperlinkMacro_Installation.pdf",
+      "LastUpdated": "2025-09-15T10:30:00Z",
+      "UpdatedBy": "Sarah Johnson",
+      "Version": "2.1"
+    },
+    {
+      "Title": "Hyperlink Fix Macro: Troubleshooting Common Issues",
+      "Description": "Troubleshooting guide for resolving common issues with the Hyperlink Fix Macro",
+      "Category": "Troubleshooting",
+      "ToolName": "Hyperlink Fix Macro",
+      "DocumentUrl": "https://example.sharepoint.com/WorkInstructions/HyperlinkMacro_Troubleshooting.pdf",
+      "LastUpdated": "2025-09-15T11:00:00Z",
+      "UpdatedBy": "Sarah Johnson",
+      "Version": "2.1"
+    },
+    {
+      "Title": "Feedback Importer Script: Setup and Configuration",
+      "Description": "Complete guide for setting up and configuring the Feedback Importer Script",
+      "Category": "Installation",
+      "ToolName": "Feedback Importer Script",
+      "DocumentUrl": "https://example.sharepoint.com/WorkInstructions/FeedbackImporter_Setup.pdf",
+      "LastUpdated": "2025-09-11T15:00:00Z",
+      "UpdatedBy": "Mike Rodriguez",
+      "Version": "1.8"
+    },
+    {
+      "Title": "Feedback Importer Script: Data Format Requirements",
+      "Description": "Specifications for data formats supported by the Feedback Importer Script",
+      "Category": "Usage",
+      "ToolName": "Feedback Importer Script",
+      "DocumentUrl": "https://example.sharepoint.com/WorkInstructions/FeedbackImporter_DataFormats.pdf",
+      "LastUpdated": "2025-09-11T15:30:00Z",
+      "UpdatedBy": "Mike Rodriguez",
+      "Version": "1.8"
+    },
+    {
+      "Title": "Data Analysis Tool: User Manual",
+      "Description": "Comprehensive user manual for the Data Analysis Tool dashboard features",
+      "Category": "Usage",
+      "ToolName": "Data Analysis Tool",
+      "DocumentUrl": "https://example.sharepoint.com/WorkInstructions/DataAnalysis_UserManual.pdf",
+      "LastUpdated": "2025-09-04T10:00:00Z",
+      "UpdatedBy": "Jennifer Lee",
+      "Version": "3.2"
+    },
+    {
+      "Title": "Report Generator: Template Customization Guide",
+      "Description": "Instructions for customizing and creating new report templates",
+      "Category": "Configuration",
+      "ToolName": "Report Generator",
+      "DocumentUrl": "https://example.sharepoint.com/WorkInstructions/ReportGenerator_Templates.pdf",
+      "LastUpdated": "2025-08-28T17:00:00Z",
+      "UpdatedBy": "David Wilson",
+      "Version": "1.5"
+    }
+  ],
+  "NewsAnnouncements": [
+    {
+      "Title": "Tool Management Hub Now Live",
+      "Description": "Our new streamlined platform is now available! Report issues faster and access documentation more efficiently than ever before. The new hub consolidates all tool-related resources in one central location.",
+      "PublishDate": "2025-09-18T08:00:00Z",
+      "ExpiryDate": "2025-10-18T08:00:00Z",
+      "Priority": "High",
+      "Icon": "📢",
+      "IsActive": true,
+      "TargetAudience": "All Users"
+    },
+    {
+      "Title": "New Mobile App Available",
+      "Description": "Submit issues on-the-go with our new mobile-responsive interface. Access everything from your smartphone or tablet. The mobile app includes all desktop features optimized for touch interfaces.",
+      "PublishDate": "2025-09-16T12:00:00Z",
+      "ExpiryDate": "2025-10-16T12:00:00Z",
+      "Priority": "Medium",
+      "Icon": "🔧",
+      "IsActive": true,
+      "TargetAudience": "All Users"
+    },
+    {
+      "Title": "Performance Improvements",
+      "Description": "We've optimized load times and improved the user experience based on your feedback. Pages now load 50% faster! Database queries have been optimized and caching has been implemented.",
+      "PublishDate": "2025-09-11T09:00:00Z",
+      "ExpiryDate": "2025-10-11T09:00:00Z",
+      "Priority": "Low",
+      "Icon": "⚡",
+      "IsActive": true,
+      "TargetAudience": "All Users"
+    },
+    {
+      "Title": "Scheduled Maintenance Window",
+      "Description": "System maintenance is scheduled for this Saturday from 2:00 AM to 6:00 AM. During this time, some services may be temporarily unavailable. Please plan accordingly.",
+      "PublishDate": "2025-09-10T10:00:00Z",
+      "ExpiryDate": "2025-09-21T10:00:00Z",
+      "Priority": "High",
+      "Icon": "⚠️",
+      "IsActive": true,
+      "TargetAudience": "All Users"
+    },
+    {
+      "Title": "New Training Resources Available",
+      "Description": "Updated training materials and video tutorials are now available in the Work Instructions section. Learn about the latest features and best practices for tool usage.",
+      "PublishDate": "2025-09-08T14:00:00Z",
+      "ExpiryDate": "2025-12-08T14:00:00Z",
+      "Priority": "Medium",
+      "Icon": "📊",
+      "IsActive": true,
+      "TargetAudience": "All Users"
+    }
+  ],
+  "Statistics": [
+    {
+      "Title": "Issues This Week",
+      "MetricType": "Issues This Week",
+      "CurrentValue": 3,
+      "LastUpdated": "2025-09-18T08:00:00Z",
+      "AutoCalculated": true
+    },
+    {
+      "Title": "Issues This Month",
+      "MetricType": "Issues This Month",
+      "CurrentValue": 12,
+      "LastUpdated": "2025-09-18T08:00:00Z",
+      "AutoCalculated": true
+    },
+    {
+      "Title": "Amount Resolved",
+      "MetricType": "Amount Resolved",
+      "CurrentValue": 8,
+      "LastUpdated": "2025-09-18T08:00:00Z",
+      "AutoCalculated": true
+    },
+    {
+      "Title": "Open Issues",
+      "MetricType": "Open Issues",
+      "CurrentValue": 5,
+      "LastUpdated": "2025-09-18T08:00:00Z",
+      "AutoCalculated": true
+    },
+    {
+      "Title": "Resolved This Month",
+      "MetricType": "Resolved This Month",
+      "CurrentValue": 15,
+      "LastUpdated": "2025-09-18T08:00:00Z",
+      "AutoCalculated": true
+    },
+    {
+      "Title": "Resolved All Time",
+      "MetricType": "Resolved All Time",
+      "CurrentValue": 247,
+      "LastUpdated": "2025-09-18T08:00:00Z",
+      "AutoCalculated": false
+    }
+  ],
+  "importInstructions": {
+    "step1": "Create each SharePoint list using the corresponding schema",
+    "step2": "Import this sample data to test the Power Apps functionality",
+    "step3": "Adjust dates to current timeframe if needed",
+    "step4": "Update URLs to match your SharePoint environment",
+    "step5": "Test all connections and data sources in Power Apps"
+  },
+  "dataManagement": {
+    "issueTracker": {
+      "note": "ReportedDate and ResolvedDate should be updated to reflect current dates for testing",
+      "priorities": ["Critical", "High", "Medium", "Low"],
+      "statuses": ["Open", "In Progress", "Resolved", "Closed"]
+    },
+    "toolReleases": {
+      "note": "ReleaseDate should be recent for 'Latest Updates' section to display properly",
+      "releaseTypes": ["Major", "Minor", "Patch", "Hotfix"],
+      "statuses": ["Released", "Beta", "Planned", "Cancelled"]
+    },
+    "workInstructions": {
+      "note": "DocumentUrl should point to actual SharePoint documents in your environment",
+      "categories": ["Installation", "Troubleshooting", "Configuration", "Usage", "Maintenance"]
+    },
+    "newsAnnouncements": {
+      "note": "Set IsActive to true for items to appear in the app",
+      "icons": ["📢", "🔧", "⚡", "📊", "🎉", "⚠️", "📋", "🔔"],
+      "audiences": ["All Users", "Administrators", "Power Users", "End Users"]
+    }
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "sharePointLists": {
+    "IssueTracker": {
+      "title": "Issue Tracker",
+      "description": "Track issues reported for various tools and systems",
+      "template": "100",
+      "fields": [
+        {
+          "internalName": "Title",
+          "displayName": "Issue Title",
+          "type": "Text",
+          "required": true,
+          "description": "Brief description of the issue"
+        },
+        {
+          "internalName": "Description",
+          "displayName": "Description",
+          "type": "Note",
+          "required": true,
+          "description": "Detailed description of the issue"
+        },
+        {
+          "internalName": "Priority",
+          "displayName": "Priority",
+          "type": "Choice",
+          "required": true,
+          "choices": ["Critical", "High", "Medium", "Low"],
+          "defaultValue": "Medium",
+          "description": "Priority level of the issue"
+        },
+        {
+          "internalName": "Status",
+          "displayName": "Status",
+          "type": "Choice",
+          "required": true,
+          "choices": ["Open", "In Progress", "Resolved", "Closed"],
+          "defaultValue": "Open",
+          "description": "Current status of the issue"
+        },
+        {
+          "internalName": "Tool",
+          "displayName": "Tool/System",
+          "type": "Text",
+          "required": true,
+          "description": "The tool or system affected by this issue"
+        },
+        {
+          "internalName": "ReportedBy",
+          "displayName": "Reported By",
+          "type": "User",
+          "required": true,
+          "description": "Person who reported the issue"
+        },
+        {
+          "internalName": "ReportedDate",
+          "displayName": "Reported Date",
+          "type": "DateTime",
+          "required": true,
+          "description": "Date and time when the issue was reported"
+        },
+        {
+          "internalName": "ResolvedDate",
+          "displayName": "Resolved Date",
+          "type": "DateTime",
+          "required": false,
+          "description": "Date and time when the issue was resolved"
+        },
+        {
+          "internalName": "AssignedTo",
+          "displayName": "Assigned To",
+          "type": "User",
+          "required": false,
+          "description": "Person assigned to resolve the issue"
+        },
+        {
+          "internalName": "ResolutionNotes",
+          "displayName": "Resolution Notes",
+          "type": "Note",
+          "required": false,
+          "description": "Notes about how the issue was resolved"
+        }
+      ]
+    },
+    "ToolReleases": {
+      "title": "Tool Releases",
+      "description": "Track releases and updates for various tools",
+      "template": "100",
+      "fields": [
+        {
+          "internalName": "Title",
+          "displayName": "Release Title",
+          "type": "Text",
+          "required": true,
+          "description": "Title of the release (e.g., Tool Name v1.0)"
+        },
+        {
+          "internalName": "ToolName",
+          "displayName": "Tool Name",
+          "type": "Text",
+          "required": true,
+          "description": "Name of the tool being released"
+        },
+        {
+          "internalName": "Version",
+          "displayName": "Version",
+          "type": "Text",
+          "required": true,
+          "description": "Version number of the release"
+        },
+        {
+          "internalName": "ReleaseDate",
+          "displayName": "Release Date",
+          "type": "DateTime",
+          "required": true,
+          "description": "Date when the tool was released"
+        },
+        {
+          "internalName": "ReleaseNotes",
+          "displayName": "Release Notes",
+          "type": "Note",
+          "required": true,
+          "description": "Detailed notes about what changed in this release"
+        },
+        {
+          "internalName": "ReleaseType",
+          "displayName": "Release Type",
+          "type": "Choice",
+          "required": true,
+          "choices": ["Major", "Minor", "Patch", "Hotfix"],
+          "defaultValue": "Minor",
+          "description": "Type of release"
+        },
+        {
+          "internalName": "Status",
+          "displayName": "Status",
+          "type": "Choice",
+          "required": true,
+          "choices": ["Released", "Beta", "Planned", "Cancelled"],
+          "defaultValue": "Released",
+          "description": "Current status of the release"
+        },
+        {
+          "internalName": "DownloadUrl",
+          "displayName": "Download URL",
+          "type": "URL",
+          "required": false,
+          "description": "Link to download the tool"
+        }
+      ]
+    },
+    "WorkInstructions": {
+      "title": "Work Instructions",
+      "description": "Repository of work instructions and documentation",
+      "template": "100",
+      "fields": [
+        {
+          "internalName": "Title",
+          "displayName": "Instruction Title",
+          "type": "Text",
+          "required": true,
+          "description": "Title of the work instruction"
+        },
+        {
+          "internalName": "Description",
+          "displayName": "Description",
+          "type": "Note",
+          "required": true,
+          "description": "Brief description of what the instruction covers"
+        },
+        {
+          "internalName": "Category",
+          "displayName": "Category",
+          "type": "Choice",
+          "required": true,
+          "choices": ["Installation", "Troubleshooting", "Configuration", "Usage", "Maintenance"],
+          "defaultValue": "Usage",
+          "description": "Category of the work instruction"
+        },
+        {
+          "internalName": "ToolName",
+          "displayName": "Tool Name",
+          "type": "Text",
+          "required": true,
+          "description": "Name of the tool this instruction relates to"
+        },
+        {
+          "internalName": "DocumentUrl",
+          "displayName": "Document URL",
+          "type": "URL",
+          "required": true,
+          "description": "Link to the work instruction document"
+        },
+        {
+          "internalName": "LastUpdated",
+          "displayName": "Last Updated",
+          "type": "DateTime",
+          "required": true,
+          "description": "Date when the instruction was last updated"
+        },
+        {
+          "internalName": "UpdatedBy",
+          "displayName": "Updated By",
+          "type": "User",
+          "required": true,
+          "description": "Person who last updated the instruction"
+        },
+        {
+          "internalName": "Version",
+          "displayName": "Version",
+          "type": "Text",
+          "required": false,
+          "description": "Version of the work instruction"
+        }
+      ]
+    },
+    "NewsAnnouncements": {
+      "title": "News Announcements",
+      "description": "Important news and announcements for the team",
+      "template": "100",
+      "fields": [
+        {
+          "internalName": "Title",
+          "displayName": "Announcement Title",
+          "type": "Text",
+          "required": true,
+          "description": "Title of the announcement"
+        },
+        {
+          "internalName": "Description",
+          "displayName": "Description",
+          "type": "Note",
+          "required": true,
+          "description": "Detailed description of the announcement"
+        },
+        {
+          "internalName": "PublishDate",
+          "displayName": "Publish Date",
+          "type": "DateTime",
+          "required": true,
+          "description": "Date when the announcement should be published"
+        },
+        {
+          "internalName": "ExpiryDate",
+          "displayName": "Expiry Date",
+          "type": "DateTime",
+          "required": false,
+          "description": "Date when the announcement should expire"
+        },
+        {
+          "internalName": "Priority",
+          "displayName": "Priority",
+          "type": "Choice",
+          "required": true,
+          "choices": ["High", "Medium", "Low"],
+          "defaultValue": "Medium",
+          "description": "Priority level of the announcement"
+        },
+        {
+          "internalName": "Icon",
+          "displayName": "Icon",
+          "type": "Choice",
+          "required": true,
+          "choices": ["📢", "🔧", "⚡", "📊", "🎉", "⚠️", "📋", "🔔"],
+          "defaultValue": "📢",
+          "description": "Icon to display with the announcement"
+        },
+        {
+          "internalName": "IsActive",
+          "displayName": "Is Active",
+          "type": "Boolean",
+          "required": true,
+          "defaultValue": true,
+          "description": "Whether the announcement is currently active"
+        },
+        {
+          "internalName": "TargetAudience",
+          "displayName": "Target Audience",
+          "type": "Choice",
+          "required": true,
+          "choices": ["All Users", "Administrators", "Power Users", "End Users"],
+          "defaultValue": "All Users",
+          "description": "Target audience for this announcement"
+        }
+      ]
+    },
+    "Statistics": {
+      "title": "Statistics",
+      "description": "Key performance metrics and statistics",
+      "template": "100",
+      "fields": [
+        {
+          "internalName": "Title",
+          "displayName": "Metric Name",
+          "type": "Text",
+          "required": true,
+          "description": "Name of the statistic/metric"
+        },
+        {
+          "internalName": "MetricType",
+          "displayName": "Metric Type",
+          "type": "Choice",
+          "required": true,
+          "choices": ["Issues This Week", "Issues This Month", "Amount Resolved", "Open Issues", "Resolved This Month", "Resolved All Time"],
+          "description": "Type of metric being tracked"
+        },
+        {
+          "internalName": "CurrentValue",
+          "displayName": "Current Value",
+          "type": "Number",
+          "required": true,
+          "description": "Current value of the metric"
+        },
+        {
+          "internalName": "LastUpdated",
+          "displayName": "Last Updated",
+          "type": "DateTime",
+          "required": true,
+          "description": "When this metric was last updated"
+        },
+        {
+          "internalName": "AutoCalculated",
+          "displayName": "Auto Calculated",
+          "type": "Boolean",
+          "required": true,
+          "defaultValue": false,
+          "description": "Whether this metric is automatically calculated"
+        }
+      ]
+    }
+  },
+  "listCreationOrder": [
+    "IssueTracker",
+    "ToolReleases",
+    "WorkInstructions",
+    "NewsAnnouncements",
+    "Statistics"
+  ],
+  "notes": {
+    "powerAutomate": "Consider creating Power Automate flows to automatically update Statistics list based on IssueTracker data",
+    "permissions": "Ensure appropriate permissions are set for each list based on organizational needs",
+    "indexing": "Consider adding indexes on frequently queried fields like Status, Priority, and ReportedDate"
+  }
+}
