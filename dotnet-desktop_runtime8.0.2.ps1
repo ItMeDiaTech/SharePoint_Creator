@@ -24,7 +24,7 @@ try {
     Write-Host "  $($_.Exception.Message)" -ForegroundColor Red
     Write-Host ""
     Write-Host "Press any key to close this window..." -ForegroundColor Yellow
-    $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+    $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
     exit 1
 }
 Write-Host ""
@@ -33,8 +33,18 @@ Write-Host ""
 Write-Host "Step 3: Installing .NET Desktop Runtime 8.0.2..." -ForegroundColor Yellow
 Write-Host "  This may take a few minutes..." -ForegroundColor Gray
 Write-Host ""
-.\dotnet-install.ps1 -Runtime windowsdesktop -Version 8.0.2 -InstallDir $dotnetPath
-Write-Host "  Runtime installation complete!" -ForegroundColor Green
+& .\dotnet-install.ps1 -Runtime windowsdesktop -Version 8.0.2 -InstallDir $dotnetPath
+Write-Host ""
+
+# Check if installation succeeded by looking for runtime files
+$runtimePath = Join-Path $dotnetPath "shared\Microsoft.WindowsDesktop.App\8.0.2"
+if (Test-Path $runtimePath) {
+    Write-Host "  Runtime installation complete!" -ForegroundColor Green
+    Write-Host "  Runtime files installed at: $runtimePath" -ForegroundColor Gray
+} else {
+    Write-Host "  ERROR: Installation may have failed - runtime files not found" -ForegroundColor Red
+    Write-Host "  Expected location: $runtimePath" -ForegroundColor Yellow
+}
 Write-Host ""
 
 # Add to PATH for current session
@@ -47,16 +57,14 @@ Write-Host "  Added to current session PATH" -ForegroundColor Green
 Write-Host "  Added to user PATH permanently" -ForegroundColor Green
 Write-Host ""
 
-# Verify installation
+# Verify installation by checking files
 Write-Host "Step 5: Verifying installation..." -ForegroundColor Yellow
-Write-Host ""
-Write-Host "Installed .NET Runtimes:" -ForegroundColor Cyan
-& "$dotnetPath\dotnet" --list-runtimes | ForEach-Object {
-    if ($_ -like "*Microsoft.WindowsDesktop.App 8.0.2*") {
-        Write-Host "  ✓ $_" -ForegroundColor Green
-    } else {
-        Write-Host "    $_" -ForegroundColor Gray
-    }
+if (Test-Path $runtimePath) {
+    $fileCount = (Get-ChildItem $runtimePath -File).Count
+    Write-Host "  [OK] Desktop Runtime 8.0.2 installed successfully" -ForegroundColor Green
+    Write-Host "  [OK] $fileCount runtime files found" -ForegroundColor Green
+} else {
+    Write-Host "  [WARNING] Could not verify runtime files" -ForegroundColor Yellow
 }
 
 # Clean up
@@ -74,5 +82,7 @@ Write-Host ""
 Write-Host "Location: $dotnetPath" -ForegroundColor Cyan
 Write-Host "Version: .NET Desktop Runtime 8.0.2" -ForegroundColor Cyan
 Write-Host ""
+Write-Host "NOTE: WPF and WinForms applications should now run correctly." -ForegroundColor Yellow
+Write-Host ""
 Write-Host "Press any key to close this window..." -ForegroundColor Yellow
-$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
